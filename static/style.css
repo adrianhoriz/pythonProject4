@@ -1,0 +1,224 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: floralwhite ;
+   
+    margin: 0;
+    padding: 0;
+}
+nav {
+    background-color: white;
+    padding: 10px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow:  0    10px 10px #cdcdcb;
+   
+  }
+  nav .logo a{
+    text-decoration: none;
+    margin-top: -3 0px;
+    color: #bdecb6;
+    font-size: 35px;
+    font-weight: 600;
+  }
+  nav ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    padding: 10px;
+  }
+  nav li{
+    margin-left: 7px;
+  }
+  nav li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px;
+   
+    border-radius: 5px;
+    transition: 0.3s;
+  }
+  nav li a:hover{
+    background-color: #bdecb6;
+    color: white;
+  }
+  nav .menu-icon{
+    cursor: pointer;
+    font-size: 25px;
+    color: white;
+    display: none;
+  }
+  nav .close-icon{
+    display: none;
+    font-size: 30px;
+    color: white;
+  }
+ 
+.container {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.container1 {
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #f0ececa5;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.containertabela {
+    text-align: center;
+    padding: 500px;
+    position: relative;
+    margin-top: -500px;
+}
+
+
+table {
+    background-color: #0070b5;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+form {
+    width: 100%;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.cadReg {
+    width: 100%;
+    padding: 10px;
+    background-color: #23e61c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cadReg:hover {
+    background-color: #05901a;
+}
+
+.cadDesa {
+    width: 100%;
+    padding: 10px;
+    background-color: #e65c1c;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.cadDesa:hover {
+    background-color: #7e2803;
+}
+
+a{
+color: black;
+text-decoration: none;
+}
+
+a.button1 {
+    padding: 13px;
+    background-color: #bdecb6;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: none;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+
+}
+.button-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+    padding: 20px;
+}
+
+a.button2 {
+    padding: 13px;
+    background-color: #bdecb6;
+    border-radius: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+    
+}
+a.button3 {
+    padding: 13px;
+    background-color: #bdecb6;
+    margin: 20px;
+    border-radius: 10px;
+    width: 300px;
+    height: 30px;
+    text-align: center;
+}
+
+
+.resgate {
+    font-size: 30px;
+    background: linear-gradient(to bottom, rgb(79, 183, 88), rgb(140, 225, 160));
+    height: 98%;
+    width: 98%;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Centraliza os elementos horizontalmente */
+    align-items: center; /* Centraliza os elementos verticalmente */
+    box-shadow: 0 10px 10px #cdcdcd;
+}
+ 
+ 
+img {
+    width: 200px;
+    height: auto; /* Ajusta a altura proporcional à largura */
+    margin-right: 20px; /* Adiciona margem à direita para separar da tag h2 */
+}
+ 
+ 
+.mi {
+    text-align: center;
+    margin: 0; /* Remove margens padrão */
+}
+
+.mapinha {
+        text-align: center;
+        width: 1300px;
+        height: 600px;
+        padding: 100px;
+        border-radius: 60px;
+}
+h3{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 20px;
+    padding: 20px;
+}
+.text{
+    text-align: center;
+    font-size: 20px;
+  }
+

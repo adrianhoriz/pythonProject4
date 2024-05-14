@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>Mostrar Tabelas</title>
+</head>
+<body>
+    <div class="resgate">
+        <!-- Incluindo a imagem ao lado do título -->
+        <div class="imagem">
+            <img src="static/img/rsrs.png" width="450" height="100%" alt="Logo RS">
+        </div>
+        <h2 class="mi">MISSÃO RESGATE RS</h2>
+    </div>
+    <div class="containertabela">
+    <h1>Tabela de Resgatados</h1>
+    <table border="5" >
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome</th>
+                <th>Região</th>
+                <th>Nome do Pai</th>
+                <th>Nome da Mãe</th>
+                <th>Irmãos</th>
+                <th>Idade</th>
+                <th>Filhos</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for resgatado in resgatados %}
+            <tr>
+                <td>{{ resgatado[0] }}</td>
+                <td>{{ resgatado[1] }}</td>
+                <td>{{ resgatado[2] }}</td>
+                <td>{{ resgatado[3] }}</td>
+                <td>{{ resgatado[4] }}</td>
+                <td>{{ resgatado[5] }}</td>
+                <td>{{ resgatado[6] }}</td>
+                <td>{{ resgatado[7] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h1>Tabela de Desaparecidos</h1>
+    <table border="5">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Seu Nome</th>
+                <th>Nome Desaparecido</th>
+                <th>Região</th>
+                <th>Idade</th>
+                <th>Seu Telefone</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for desaparecido in desaparecidos %}
+            <tr>
+                <td>{{ desaparecido[0] }}</td>
+                <td>{{ desaparecido[1] }}</td>
+                <td>{{ desaparecido[2] }}</td>
+                <td>{{ desaparecido[3] }}</td>
+                <td>{{ desaparecido[4] }}</td>
+                <td>{{ desaparecido[5] }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

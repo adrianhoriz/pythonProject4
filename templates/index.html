@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Principal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <title>S.O.S. RS</title>
+</head>
+ 
+<body>
+    <nav>
+        <div class="logo">
+            <img class="imagem" src="static/img/novors.png" width="45px" height="10px" alt="Logo RS">
+         
+        </div>
+          <ul class="ul">
+            <li> <a href="home/index.html"> home </a> </li>
+            <li> <a href="#"> Quem somos </a> </li>
+            <li> <a href="#"> Doações </a> </li>
+            <li> <a href="#"> serviços </a> </li>
+            <li> <a href="#"> contato </a> </li>
+            <div class="close-icon">
+              <span class="material-symbols-outlined">
+    close
+    </span>
+            </div>
+          </ul>
+          <div class="menu-icon">
+            <span class="material-symbols-outlined">
+    menu
+    </span>
+          </div>
+      </nav>
+    
+      <h3>Bioma Pantanal: características, clima, solo, vegetação e fauna</h3>
+      <p class="text">Dados do Centro Nacional de Prevenção e Combate aos Incêndios Florestais (Prevfogo) apontaram<br>
+       que, em 2020, 15% do Pantanal foi perdido, o que equivale a uma área de cerca de 2,2 milhões de<br>
+     hectares, uma proporção do tamanho do território de Israel.</p>
+        <img class="mapinha" src="static/img/sos.png" alt="">
+    <div class="container">
+        <h1>Escolha uma das opções</h1>
+        <div class="button-container">
+            <a href="{{ url_for('cadastrar_resgatado') }}" class="button2">Registrar pessoas do abrigo</a>
+            <a href="{{ url_for('cadastrar_desaparecido') }}" class="button3">Cadastrar Pessoas Desaparecidas</a>
+            <a href="{{ url_for('mostrar_tabelas') }}" class="button1">Mostrar Tabelas de desaparecidos e pessoas salvas </a>
+        </div>
+    </div>
+</body>
+</html>
+

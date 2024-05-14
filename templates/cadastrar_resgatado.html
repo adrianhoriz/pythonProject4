@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoa Resgatada</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <div class="container">
+    <h1>Cadastro de Pessoa Resgatada</h1>
+<form method="POST" action="{{ url_for('cadastrar_resgatado') }}">
+    Nome: <input type="text" name="nome"><br>
+    Região: <input type="text" name="regiao"><br>
+    Nome do Pai: <input type="text" name="nome_pai"><br>
+    Nome da Mãe: <input type="text" name="nome_mae"><br>
+    Irmãos: <input type="text" name="irmaos"><br>
+    Idade: <input type="text" name="idade"><br>
+    Filhos: <input type="text" name="filhos"><br>
+    <input class="cadReg" type="submit" value="Cadastrar">
+</form>
+</div>
+</body>
+</html>

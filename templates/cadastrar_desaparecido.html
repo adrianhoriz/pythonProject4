@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Pessoas Desaparecidas</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container1">
+        <h1>Cadastro de Pessoas Desaparecidas</h1>
+        <form method="POST" action="{{ url_for('cadastrar_desaparecido_post') }}">
+    Seu Nome: <input type="text" name="seu_nome"><br>
+    Nome Desaparecido: <input type="text" name="nome_desaparecido"><br>
+    Região: <input type="text" name="regiao"><br>
+    Idade: <input type="text" name="idade"><br>
+    Seu Telefone: <input type="text" name="seu_telefone"><br>
+    <input class="cadDesa" type="submit" value="Submit">
+</form>
+
+    </div>
+</body>
+</html>
