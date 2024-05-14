@@ -80,7 +80,8 @@ nav {
 
 
 table {
-    background-color: #0070b5;
+    width: 600px;
+    height: 400px;
 }
 
 h1 {
@@ -222,3 +223,25 @@ h3{
     font-size: 20px;
   }
 
+footer img{
+  width: 30px;
+  height: 30px;
+ 
+}
+footer{
+
+    display: flex;
+  justify-content: center;
+  text-align: center;
+ 
+ 
+}
+footer a{
+  margin: 20px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+}
+footer a:hover{
+  color: black;
+}

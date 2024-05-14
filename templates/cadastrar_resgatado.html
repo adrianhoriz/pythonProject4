@@ -8,6 +8,29 @@
 
 </head>
 <body>
+    <nav>
+        <div class="logo">
+            <img class="imagem" src="static/img/novors.png" width="45px" height="10px" alt="Logo RS">
+         
+        </div>
+          <ul class="ul">
+            <li> <a href="home/index.html"> home </a> </li>
+            <li> <a href="#"> Quem somos </a> </li>
+            <li> <a href="#"> Doações </a> </li>
+            <li> <a href="#"> serviços </a> </li>
+            <li> <a href="#"> contato </a> </li>
+            <div class="close-icon">
+              <span class="material-symbols-outlined">
+    close
+    </span>
+            </div>
+          </ul>
+          <div class="menu-icon">
+            <span class="material-symbols-outlined">
+    menu
+    </span>
+          </div>
+      </nav>
     <div class="container">
     <h1>Cadastro de Pessoa Resgatada</h1>
 <form method="POST" action="{{ url_for('cadastrar_resgatado') }}">
